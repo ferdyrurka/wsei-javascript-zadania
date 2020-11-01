@@ -106,22 +106,16 @@ toSortArray.sort().map(value => console.log(value));
 // 8 check
 
 const toSumIndexArrayA = [2, 3, 2]
-const toSumIndexArrayB = [2, 3]
+const toSumIndexArrayB = [1, 4, 3]
 
 function sumIndex(arrayA, arrayB) {
-    let sumA = 0;
+    let newArray = [];
 
-    for (let [index, val] of arrayA.entries()) {
-        sumA += index;
-    }
+    arrayA.forEach((num1, i) => {
+        newArray.push(num1 + arrayB[i]);
+    });
 
-    let sumB = 0;
-
-    for (let [index, val] of arrayB.entries()) {
-        sumB += index;
-    }
-
-    return [sumA, sumB];
+    return newArray;
 }
 
 console.log(sumIndex(toSumIndexArrayA, toSumIndexArrayB));
