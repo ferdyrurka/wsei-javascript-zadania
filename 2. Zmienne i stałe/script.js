@@ -1,4 +1,4 @@
-//1
+// 1
 
 const num = 1,
     str = '2',
@@ -12,17 +12,17 @@ console.log(combo);
 console.log(bool);
 console.log(nothing);
 
-//2
+// 2
 
 const a = 1;
 const b = 2;
-let sum = 0;
+let sum;
 
 sum = a + b;
 
 console.log(sum);
 
-//3
+// 3
 
 let noValue;
 

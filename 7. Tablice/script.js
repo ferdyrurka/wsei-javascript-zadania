@@ -103,6 +103,61 @@ const toSortArray = [9, 2, 5, 7, 4];
 
 toSortArray.sort().map(value => console.log(value));
 
-// 8
+// 8 check
+
+const toSumIndexArrayA = [2, 3, 2]
+const toSumIndexArrayB = [2, 3]
+
+function sumIndex(arrayA, arrayB) {
+    let sumA = 0;
+
+    for (let [index, val] of arrayA.entries()) {
+        sumA += index;
+    }
+
+    let sumB = 0;
+
+    for (let [index, val] of arrayB.entries()) {
+        sumB += index;
+    }
+
+    return [sumA, sumB];
+}
+
+console.log(sumIndex(toSumIndexArrayA, toSumIndexArrayB));
+
+// 9
+
+const arrayToDelete = ['Jarosław', 'Grzegorz', 'Szymon'];
+
+console.log("Before delete: " + arrayToDelete);
+
+function deleteElement(array, element) {
+    let elementIndex = array.indexOf(element);
+
+    if (elementIndex >= 0) {
+        array.splice(elementIndex, 1);
+    }
+
+    return array;
+}
+
+const newArrayDelete = deleteElement(arrayToDelete, "Jarosław");
+
+console.log("After delete element with value Jarosław: " + newArrayDelete);
+
+// 10
+
+const arrayToChanges = [-1, 2, 3, -10, 4, -5, -2, 4];
+
+console.log("Before changes: " + arrayToChanges);
+
+function changeArray(array) {
+    return array.map(number => (number * (-1)));
+}
+
+const newArrayChanges = changeArray(arrayToChanges);
+
+console.log("Before after changes: " + newArrayChanges);
 
 
