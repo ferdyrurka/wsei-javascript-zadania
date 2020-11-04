@@ -423,3 +423,43 @@ function getAvgFromArray(sum, array) {
 
 const avgLengthStrings = getAvgFromArray(sumLengthStrings, lengthStrings);
 console.log(avgLengthStrings);
+
+// 14
+
+
+function createObject() {
+    return {
+        name: '',
+        surname: '',
+        age: '',
+    };
+}
+
+let personObject = createObject();
+
+function setPersonData(name, surname, age) {
+    personObject.name = name;
+    personObject.surname = surname;
+    personObject.age = age;
+
+    personObject.nameLength = name.length;
+    personObject.surnameLength = surname.length;
+    personObject.ageLength = age.length;
+
+    if (personObject.nameLength > 5 || personObject.surnameLength > 5 || personObject.age > 5) {
+        const defaultObjectBtn = document.createElement('button');
+        defaultObjectBtn.innerText = 'Przywróc obiekt do stanu pierwotnego';
+        document.body.append(defaultObjectBtn, document.getElementById('root'));
+
+        defaultObjectBtn.addEventListener('click', () => {
+            personObject = createObject();
+
+            console.log(personObject);
+        })
+    }
+
+    console.log(personObject);
+}
+
+setPersonData('Jan', 'Nowak', 12);
+setPersonData('Janusz', 'Nosacz', 45);
