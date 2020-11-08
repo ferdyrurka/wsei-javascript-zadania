@@ -99,11 +99,12 @@ console.log(sumEven([1, 2, 3, 4, 6, 8, 9]));
 
 // 7
 
-const toSortArray = [9, 2, 5, 7, 4];
+const toSortArray = [9, 2, 22, 5, 7, 4];
 
-toSortArray.sort().map(value => console.log(value));
+const sortTab = toSortArray.sort((a, b) => a - b);
+console.log(sortTab);
 
-// 8 check
+// 8
 
 const toSumIndexArrayA = [2, 3, 2]
 const toSumIndexArrayB = [1, 4, 3]
