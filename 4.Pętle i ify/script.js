@@ -75,9 +75,9 @@ for(let i = 0; i < 100; i++){
     }
 }
 
-//8
+// 8
 
-//a
+// a
 
 let star = 5;
 
@@ -98,16 +98,92 @@ for(let i = 1; i <= star; i++){
 
 // b
 
-//TODO
+const starSignature = '*';
+
+for (let i = 0; i < 5; i++) {
+    let result = '';
+
+    for (let x = 0; x < 5 - i; x++) {
+        result += ' ';
+    }
+
+    for (let y = 0; y < i + 1; y++) {
+        result += ' ' + starSignature;
+    }
+
+    console.log(result);
+}
 
 // c
 
-//TODO
+for (let i = 0; i < 5; i++) {
+    let result = '';
+
+    for (let x = 0; x < 5 - i; x++) {
+        result += ' ';
+    }
+
+    for (let y = 0; y < (2 * i + 1); y++) {
+        result += starSignature;
+    }
+
+    console.log(result);
+}
 
 // d
 
-//TODO
+for (let i = 0; i < 5; i++) {
+    let result = '';
+
+    for (let x = 0; x < i + 1; x++) {
+        result += starSignature;
+    }
+
+    for (let y = 0; y < 5 - (i + 1); y++) {
+        result += (y + 1);
+    }
+
+    console.log(result);
+}
+
+console.log('-----');
+
+for (let i = 0; i < 5; i++) {
+    let result = '';
+
+    for (let x = 0; x < (5 - i); x++) {
+        result += starSignature;
+    }
+
+    for (let y = 0; y < 5 - (5 - i); y++) {
+        result += 5 - ((5 - (5 - i)) - y);
+    }
+
+    console.log(result);
+}
 
 // e
 
-//TODO
+for (let i = 0; i < 5; i++) {
+    let result = '';
+
+    for (let x = 0; x < 5 - i; x++) {
+        result += ' ';
+    }
+
+    for (let y = 0; y < i + 1; y++) {
+        result += ' ' + starSignature;
+    }
+
+    console.log(result);
+}
+
+for (let i = 0; i < 3; i++) {
+    let result = '';
+
+    for (let x = 0; x < 5; x++) {
+        result += ' ';
+    }
+
+    console.log(result + ' ' + starSignature);
+}
