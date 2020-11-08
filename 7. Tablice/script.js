@@ -106,10 +106,10 @@ console.log(sortTab);
 
 // 8
 
-const toSumIndexArrayA = [2, 3, 2]
-const toSumIndexArrayB = [1, 4, 3]
+const toSumArrayA = [2, 3, 2]
+const toSumArrayB = [1, 4, 3]
 
-function sumIndex(arrayA, arrayB) {
+function sumArraysValue(arrayA, arrayB) {
     let newArray = [];
 
     arrayA.forEach((num1, i) => {
@@ -119,7 +119,7 @@ function sumIndex(arrayA, arrayB) {
     return newArray;
 }
 
-console.log(sumIndex(toSumIndexArrayA, toSumIndexArrayB));
+console.log(sumArraysValue(toSumArrayA, toSumArrayB));
 
 // 9
 
